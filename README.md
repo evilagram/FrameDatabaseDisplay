@@ -1,0 +1,13 @@
+# Frame Database Display
+
+This was my final project for my Java class at Sacred Heart University. In it, I created a program with a form interface that can read a database of entries, stored as a text file, allow you to edit those entries, then save them back to that text file. Obviously this isn't quite like manipulating an SQL database, but that was a bit outside the scope of the class.
+
+I decided to make the database about storing the "Frame Data" of various moves from Fighting Games, which I happen to be a big fan of. In these games, characters have a list of moves, that each have attributes relating to how much time they take to perform, and how long they stun their opponents when they hit or are blocked. If I were to expand this program in the future, I'd include a functionality for finding moves that "link" into one another, meaning their startup is less than the frame advantage of another move.
+
+The program expects a text file in a folder at C:\Temp. It will create a new one if none exists, but the folder itself needs to exist for it to function. This is where the database is stored. A sample folder is included in this repo at the root if you want an existing database of entries.
+
+The program is operated by either selecting an entry from the list on the left, which loads the fields of that entry into the text boxes of the main form, allowing to to edit them, or by pressing add new entry, which will clear all the current boxes of the main form, set the id to O, indicating a new entry is being added, and then you can click save changes to save any modifications to a selected list entry, or to have the new entry added to the list. All fields are checked to see if their contents are valid before saving.
+
+
+
+If I were to expand this to include a combo creator, then I would likely create an additional form that pops up and shows which moves can be linked from the currently selected move, loading them in and repeating the process as far as possible, until the combo reaches a dead end. It would show a list of all the moves in the current combo in the order selected, with the correct notation relative to how to perform that combo. Some difficulties with this are that in an actual fighting game, every move has a range and a pushback, which my database does not include, because they are undocumented in most games. This makes it so combos cannot go on forever. There are also other small details that make combos possible in actual fighting games which I'd have to add a lot more complexity to include, such as "meaty" attacks or "counterhits". Oh well, notes for the future.

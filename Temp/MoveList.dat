@@ -1,0 +1,10 @@
+1~Jab~NORMAL~3~3~5~11~11~3~true~true
+2~Strong~NORMAL~4~4~10~16~15~17~true~true
+3~Fierce~NORMAL~6~3~15~16~18~23~true~true
+4~Short~NORMAL~4~4~7~13~13~7~false~false
+5~Forward~NORMAL~8~7~16~17~13~19~false~false
+6~Roundhouse~NORMAL~11~6~19~21~23~26~false~false
+7~Hadouken~SPECIAL~11~0~38~27~20~10~false~true
+8~Tatsumaki Senpu Kyaku~SPECIAL~6~7~14~40~16~19~false~true
+9~Shoryuken~SPECIAL~3~8~26~40~17~26~false~true
+10~Shipuujinrai Kyaku~SUPER~1~9~27~60~25~51~false~false
